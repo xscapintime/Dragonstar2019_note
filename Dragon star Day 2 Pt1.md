@@ -1,12 +1,31 @@
-# Dragon star Day 2 Pt.1
+# Alignment of short/long-read sequencing data
+## Dragon star Day 2 Pt.1
 
 > [Dragonstar2019 by Kai Wang](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FWGLab%2Fdragonstar2019)
 >
-> 1. Alignment of short/long-read sequencing data
+> 1. **Alignment of short/long-read sequencing data**
 > 2. Genome assembly by short/long-read sequencing
 
-[TOC]
 
+- [Part Ⅰ Alignment of short/long-read sequencing data](#part---alignment-of-short-long-read-sequencing-data)
+  * [1 Sequence similarity](#1-sequence-similarity)
+  * [2 Sequence alignment](#2-sequence-alignment)
+    + [2.1 Pairwise alignment](#21-pairwise-alignment)
+  * [3 Dynamic programming](#3-dynamic-programming)
+    + [3.1 Global alignment: Needleman-Wunsch](#31-global-alignment--needleman-wunsch)
+      - [3.1.1 Working of Needleman -Wunsch Algorithm](#311-working-of-needleman--wunsch-algorithm)
+    + [3.2 Local alignment: Smith-Waterman](#32-local-alignment--smith-waterman)
+      - [3.2.1 Working of Smith-Waterman Algorithm](#321-working-of-smith-waterman-algorithm)
+  * [4 BLAST: The seed-index-map-extend-merge strategy](#4-blast--the-seed-index-map-extend-merge-strategy)
+    + [4.1 BLAST Basics](#41-blast-basics)
+    + [4.2 Process: The seed-index-map-extend-merge strategy](#42-process--the-seed-index-map-extend-merge-strategy)
+      - [4.2.1 The Process](#421-the-process)
+      - [4.2.2 Statistical significance of alignment](#422-statistical-significance-of-alignment)
+  * [5  BWT](#5--bwt)
+    + [5.1 Bowtie/BWA](#51-bowtie-bwa)
+    + [5.2 BWT procedures](#52-bwt-procedures)
+    + [5.3 BWT reverse transformation](#53-bwt-reverse-transformation)
+    + [5.4 BWT search](#54-bwt-search)
 
 
 ## Part Ⅰ Alignment of short/long-read sequencing data
