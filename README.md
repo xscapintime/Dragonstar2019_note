@@ -10,7 +10,7 @@
 
 ![](https://wx4.sinaimg.cn/mw690/695f6845ly1g5l7dvprcsj232821ib2a.jpg)
 
-- [DAY 1 Part Ⅰ Genomic technologies in disease studies](https://github.com/2wxscapin/Dragonstar2019_note/blob/master/Dragon%20star%20Day%201.md)
+- [DAY 1 Part Ⅰ Genomic technologies in disease studies](#day-1-part---genomic-technologies-in-disease-studies)
   * [1 Types of genetic variation](#1-types-of-genetic-variation)
   * [2 Revolution: single-molecule long-read sequencing](#2-revolution--single-molecule-long-read-sequencing)
     + [2.1 Oxford Nanopore Sequencing](#21-oxford-nanopore-sequencing)
