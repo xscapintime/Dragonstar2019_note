@@ -1,11 +1,44 @@
-# Dragon star Day 2 Pt.2
+# Genome assembly by short/long-read sequencing
+## Dragon star Day 2 Pt.2
 
 > [Dragonstar2019 by Kai Wang](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FWGLab%2Fdragonstar2019)
 >
 > 1. Alignment of short/long-read sequencing data
-> 2. Genome assembly by short/long-read sequencing
+> 2. **Genome assembly by short/long-read sequencing**
 
-[TOC]
+- [Part Ⅱ Genome assembly by short/long-read sequencing](#part---genome-assembly-by-short-long-read-sequencing)
+  * [1 genome assembly](#1-genome-assembly)
+    + [1.1 What is genome assembly](#11-what-is-genome-assembly)
+    + [1.2 Why genome assembly](#12-why-genome-assembly)
+    + [1.3 What types of genome assembly?](#13-what-types-of-genome-assembly-)
+      - [1.3.1 *de novo* assembly](#131--de-novo--assembly)
+      - [1.3.2 Comparative assembly](#132-comparative-assembly)
+      - [1.3.3 *De Novo* Assembly paradigms](#133--de-novo--assembly-paradigms)
+  * [2  Graph theory](#2--graph-theory)
+    + [2.1 Directed graph](#21-directed-graph)
+    + [2.2 Overlap-based approach (OLC)](#22-overlap-based-approach--olc-)
+  * [3 Comparison of two approaches for large genomes such as human genomes](#3-comparison-of-two-approaches-for-large-genomes-such-as-human-genomes)
+    + [3.1 U.S. Human Genome Project](#31-us-human-genome-project)
+    + [3.2 Draft human genome](#32-draft-human-genome)
+    + [3.3 How Perl Saved the Human Genome Project](#33-how-perl-saved-the-human-genome-project)
+    + [3.4 Back to today](#34-back-to-today)
+  * [4 Lander-Waterman statistics in genome assembly](#4-lander-waterman-statistics-in-genome-assembly)
+    + [4.1 Coverage at a position can be modelled by Poisson distribution](#41-coverage-at-a-position-can-be-modelled-by-poisson-distribution)
+    + [4.2 What’s the fraction of genome that are covered by reads?](#42-what-s-the-fraction-of-genome-that-are-covered-by-reads-)
+    + [4.3 How many contigs are generated?](#43-how-many-contigs-are-generated-)
+    + [4.4 Assembling large genomes today](#44-assembling-large-genomes-today)
+    + [4.5 Canu assembler for long-read assembly](#45-canu-assembler-for-long-read-assembly)
+    + [4.6 Wtdbg2 assembler for long-read assembly](#46-wtdbg2-assembler-for-long-read-assembly)
+  * [5 Seven Bridges of Königsberg Problem](#5-seven-bridges-of-k-nigsberg-problem)
+    + [5.1 Euler’s Theorem on directed graphs](#51-euler-s-theorem-on-directed-graphs)
+    + [5.2 Euler’s Theorem on undirected graphs](#52-euler-s-theorem-on-undirected-graphs)
+    + [5.3 The Königsberg graph is not Eulerian](#53-the-k-nigsberg-graph-is-not-eulerian)
+    + [5.4 Hamiltonian vs Eulerian path](#54-hamiltonian-vs-eulerian-path)
+  * [6 Constructing the de Bruijn Graph](#6-constructing-the-de-bruijn-graph)
+    + [6.1 Error correction in de Bruijn graph](#61-error-correction-in-de-bruijn-graph)
+    + [6.2 A fun hypothetical case study: Frederick Sanger’s insulin sequencing study](#62-a-fun-hypothetical-case-study--frederick-sanger-s-insulin-sequencing-study)
+
+
 
 ## Part Ⅱ Genome assembly by short/long-read sequencing
 
