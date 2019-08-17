@@ -4,7 +4,15 @@
 >
 > 1. **Genomic technologies in disease studies**
 > 2. NGS data formats and variant calling
-[TOC]
+
+- [Part Ⅰ Genomic technologies in disease studies](#part---genomic-technologies-in-disease-studies)
+  * [1 Types of genetic variation](#1-types-of-genetic-variation)
+  * [2 Revolution: single-molecule long-read sequencing](#2-revolution--single-molecule-long-read-sequencing)
+    + [2.1 Oxford Nanopore Sequencing](#21-oxford-nanopore-sequencing)
+    + [2.2 PacBio Single-molecule real-time (SMRT) sequencing](#22-pacbio-single-molecule-real-time--smrt--sequencing)
+    + [2.3 Linked-read Sequencing](#23-linked-read-sequencing)
+    + [2.4 Single-molecule optical mapping (Bionano Genomics)](#24-single-molecule-optical-mapping--bionano-genomics-)
+
 
 ## Part Ⅰ Genomic technologies in disease studies
 
