@@ -1,11 +1,29 @@
-# Dragon star Day 1
+# NGS data formats and variant calling
+## Dragon star Day 1
 
 > [Dragonstar2019 by Kai Wang](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FWGLab%2Fdragonstar2019)
 >
 > 1. Genomic technologies in disease studies
 > 2. **NGS data formats and variant calling**
 
-[TOC]
+- [Part Ⅱ NGS data formats and variant calling](#part---ngs-data-formats-and-variant-calling)
+  * [1 Basic Concepts in NGS](#1-basic-concepts-in-ngs)
+  * [2 Data formats](#2-data-formats)
+    + [2.1 The Rawset of Raw Data](#21-the-rawset-of-raw-data)
+    + [2.2 NGS data formats](#22-ngs-data-formats)
+    + [2.3 Formats use different coordinate systems, which adds confusion](#23-formats-use-different-coordinate-systems--which-adds-confusion)
+  * [3 Visualization of genomic data: IGV](#3-visualization-of-genomic-data--igv)
+  * [4 Coverage](#4-coverage)
+    + [4.1 What is coverage?](#41-what-is-coverage-)
+- [What is variant calling?](#what-is-variant-calling-)
+    + [4.2 Coverage: how many reads we need to cover the genome?](#42-coverage--how-many-reads-we-need-to-cover-the-genome-)
+    + [4.3 Overdispersion](#43-overdispersion)
+    + [4.4 Question on coverage](#44-question-on-coverage)
+  * [5 General strategy for variant calling](#5-general-strategy-for-variant-calling)
+    + [5.1 Possible Genotypes](#51-possible-genotypes)
+    + [5.2 From Sequence to Genotype: Individual Based Prior](#52-from-sequence-to-genotype--individual-based-prior)
+    + [5.3 From Sequence to Genotype: Population Based Prior](#53-from-sequence-to-genotype--population-based-prior)
+    + [5.4 Sequence Based Genotype Calls](#54-sequence-based-genotype-calls)
 
 ## Part Ⅱ NGS data formats and variant calling
 
