@@ -1,11 +1,40 @@
-# Dragon star Day 3
+# Detection of structural variants in human
+## Dragon star Day 3
 
 > [Dragonstar2019 by Kai Wang](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FWGLab%2Fdragonstar2019)
 >
-> 1. Detection of structural variants in human 
+> 1. **Detection of structural variants in human** 
 > 2. Annotation and phenotype-driven interpretation of genetic variants
-
-[TOC]
+- [Part Ⅰ Detection of structural variants in human](#part---detection-of-structural-variants-in-human)
+  * [1 Human genetic variation](#1-human-genetic-variation)
+  * [2 Mechanisms underlying structural variant formation](#2-mechanisms-underlying-structural-variant-formation)
+    + [2.1 Recurrent structural variants](#21-recurrent-structural-variants)
+    + [2.2 Nonrecurrent rearrangements](#22-nonrecurrent-rearrangements)
+  * [3 Technologies for CNV Detection](#3-technologies-for-cnv-detection)
+    + [3.1 Karyotyping and cytogenetic analysis](#31-karyotyping-and-cytogenetic-analysis)
+  * [4 SNP genotyping arrays](#4-snp-genotyping-arrays)
+  * [5 CNV Detection](#5-cnv-detection)
+    + [5.1 Log R Ratio (LRR) and B Allele Frequency (BAF)](#51-log-r-ratio--lrr--and-b-allele-frequency--baf-)
+    + [5.2 Detection of CNVs from SNP arrays using PennCNV](#52-detection-of-cnvs-from-snp-arrays-using-penncnv)
+      - [5.2.1 PennCNV Flowchart](#521-penncnv-flowchart)
+      - [5.2.2 SNP Signal Intensities](#522-snp-signal-intensities)
+      - [5.2.3 Visualization of CNVs](#523-visualization-of-cnvs)
+      - [5.2.4 Hidden Markov Model in PennCNV](#524-hidden-markov-model-in-penncnv)
+      - [5.2.5 Copy Number States](#525-copy-number-states)
+      - [5.2.6 Hidden states, copy numbers, CNV genotypes, and their descriptions](#526-hidden-states--copy-numbers--cnv-genotypes--and-their-descriptions)
+  * [6 CNV Calling](#6-cnv-calling)
+    + [6.1 Viterbi algorithm for calling](#61-viterbi-algorithm-for-calling)
+    + [6.2 Other Types of Signal Data](#62-other-types-of-signal-data)
+    + [6.3 PennCNV-Affy Pipeline](#63-penncnv-affy-pipeline)
+    + [6.4 Joint Modeling on Family Data](#64-joint-modeling-on-family-data)
+    + [6.5 Joint modeling of the CNVs in a trio](#65-joint-modeling-of-the-cnvs-in-a-trio)
+    + [6.6 Likelihood of Signal Intensities](#66-likelihood-of-signal-intensities)
+  * [7 NGS-based SV detection](#7-ngs-based-sv-detection)
+    + [7.1 Read count-based methods for SV detection](#71-read-count-based-methods-for-sv-detection)
+    + [7.2 Detection of SVs from discordant read pairs](#72-detection-of-svs-from-discordant-read-pairs)
+    + [7.5 Detection of SVs using assembly-based methods](#75-detection-of-svs-using-assembly-based-methods)
+    + [7.6 SV detection from long-read sequencing](#76-sv-detection-from-long-read-sequencing)
+    + [7.7 Bionano optical mapping for SV detection](#77-bionano-optical-mapping-for-sv-detection)
 
 ## Part Ⅰ Detection of structural variants in human 
 
