@@ -5,7 +5,6 @@
 > 1. Genomic technologies in disease studies
 > 2. NGS data formats and variant calling
 
-[TOC]
 
 ## Part Ⅰ Genomic technologies in disease studies
 
