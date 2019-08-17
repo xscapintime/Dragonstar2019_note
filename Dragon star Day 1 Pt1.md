@@ -1,6 +1,7 @@
-# Dragon star Day 1
+# Genomic technologies in disease studies
+## Dragon star Day 1
 
-> [Dragonstar2019 by Kai Wang](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FWGLab%2Fdragonstar2019)
+> [Dragonstar2019 by Kai Wang](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FWGLab%2Fdragonstar2019) 
 >
 > 1. **Genomic technologies in disease studies**
 > 2. NGS data formats and variant calling
