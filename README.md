@@ -1,4 +1,4 @@
-# Notes on Dragonstar2019 @PKU
+# Notes on Dragonstar2019 @PKU (to be finished...
 
 @PKU Beijing
 
